@@ -1,0 +1,48 @@
+/*****************navigation bar*************/
+ul {
+  margin:0px;
+  padding:0px
+  list-style:none;
+
+}
+ul li {
+  width: 200px;
+  height: 40px;
+  opacity: 0.6;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 5px;
+  color: black;
+  float: left;
+}
+ul li a {
+  text-decoration: none;
+  display: inline;
+  color: darkorange;
+}
+ul li a:hover {
+  color: lightgrey;
+}
+ul li ul li{
+  display: none;
+}
+ul li:hover ul li {
+  display: block;
+}
+nav li ul li{
+  diaplay:inline;
+}
+/************************* general **********/
+.firstPageImg {
+  background-image: url("/images/pizza1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+#custom{
+  border: 5px dotted brown;
+}
+.top5{
+top:10px;
+}
