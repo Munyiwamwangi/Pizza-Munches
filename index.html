@@ -65,9 +65,9 @@
           <div>
             <p class="orange">Select your size;</p>
             <form onsubmit="return" class="pizzaSize">
-              <input id="one" name="auto_renew" type=radio>Large Pizza  @ Ksh 800</input> <br>
-              <input id="two" name="auto_renew" type=radio>Medium Pizza  @ Ksh 500</input> <br>
-              <input id="three" name="auto_renew" type=radio>Small Pizza  @ Ksh 400</input> <br>
+              <input id="one" name="auto_renew" type=radio>Large Pizza @ Ksh 800</input> <br>
+              <input id="two" name="auto_renew" type=radio>Medium Pizza @ Ksh 500</input> <br>
+              <input id="three" name="auto_renew" type=radio>Small Pizza @ Ksh 400</input> <br>
             </form>
             </form>
           </div>
@@ -93,13 +93,13 @@
           </div>
           <p class="orange">Topping prices for medium sized pizza;-</p>
           <div class="row" id="hideMedium">
-            <input id="eight" type="checkbox" >Black-Olives<br>
-            <input id="nine" type="checkbox" >Pepperoni <br>
-            <input id="ten" type="checkbox" >Extra Cheese <br><br>
-            <input id="eleven" type="checkbox" >Sausage<br><br>
+            <input id="eight" type="checkbox">Black-Olives<br>
+            <input id="nine" type="checkbox">Pepperoni <br>
+            <input id="ten" type="checkbox">Extra Cheese <br><br>
+            <input id="eleven" type="checkbox">Sausage<br><br>
 
             <br>
-            <a href="#" onclick="getValueforMediumtopping">Section Cost</a>
+            <a href="#" onclick="getValueforMediumtopping()">Section Cost</a>
           </div>
           <p class="orange">Topping prices for small sized pizza;-</p>
           <div class="row" id="hideSmall">
@@ -108,7 +108,7 @@
             <input id="fourteen" type="checkbox">Extra Cheese <br>
             <input id="fifteen" type="checkbox">Sausage <br><br>
             <br>
-            <a href="#" onclick="getValueforSmalltopping">Section Cost</a>
+            <a href="#" onclick="getValueforSmalltopping()">Section Cost</a>
           </div>
         </div>
       </div>
@@ -119,7 +119,8 @@
     <br><br>
     <div class=" panel panel-default text-center">
       <div class="panel-body">
-        <h4 class="orange">Commonly ordered pizza munches</h4>
+        <h4 class="orange">Commonly ordered pizza munches
+        </h4>
       </div>
     </div>
 
