@@ -1,4 +1,4 @@
-//constructors for collecting user input
+/**********constructors for collecting user input*****/
 function pizzaSize(small, medium, large) {
   this.pizzaSmall = small;
   this.pizzaMedium = medium;
@@ -31,10 +31,28 @@ $(document).ready(function() {
   });
 });
 
-var priceSize = [800, 500, 400];
-var priceCrust = [100, 100, 100];
-var priceTopping = [70, 70, 70];
-
 function myFunction() {
-  confirm("click okay to deliver!");
+  confirm("click okay to confirm delivery @ Ksh 200!");
 }
+
+/***********************input from crust Radio Buttons**********/
+/**************************************************************/
+
+var priceSize = [800, 500, 400];
+var priceTopping = [150, 100, 70];
+
+/***********************input from crust Radio Buttons**********/
+/**************************************************************/
+
+$('#cripsy').click(function(){
+  var value1=document.getElementById('cripsy').value;
+  alert(value1);
+})
+$('#gluttenFree').click(function(){
+  var value2=document.getElementById('gluttenFree').value;
+  alert(value2);
+})
+$('#stuffed').click(function(){
+  var value3=document.getElementById('stuffed').value;
+  alert(value3);
+})
