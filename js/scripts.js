@@ -36,5 +36,5 @@ var priceCrust = [100, 100, 100];
 var priceTopping = [70, 70, 70];
 
 function myFunction() {
-  confirm("click okay to confirm delivery!");
+  confirm("click okay to deliver!");
 }
