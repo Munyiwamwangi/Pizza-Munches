@@ -1,7 +1,6 @@
 /*****************navigation bar*************/
 ul {
   margin:0px;
-  padding:0px
 }
 ul li {
   width: 200px;
@@ -46,4 +45,9 @@ top:10px;
 }
 .orange{
   color: orange;
+}
+/****************ORDER************BOX********/
+.order{
+  border: 5px dotted burlywood;
+  box-shadow: 5px solid brown;
 }
