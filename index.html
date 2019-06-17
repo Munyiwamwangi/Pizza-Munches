@@ -41,7 +41,7 @@
             </ul>
           </li>
           <li>
-            <a href="#custom">Customize Your Pizza</a>
+            <a href="#drop">Customize Your Pizza</a>
           </li>
         </ul>
       </nav>
@@ -56,7 +56,7 @@
     </div>
     <br> <br>
     <div class="panel-body">
-      <p style=" text-align:center" class="orange">Want Some Custom Made Pizza, We Got you covered;</p>
+      <p id="drop" style=" text-align:center" class="orange">Want Some Custom Made Pizza, We Got you covered;</p>
     </div>
     <div class="order">
       <div class=" panel panel-default">
@@ -85,30 +85,30 @@
       </div>
       <div class="col-md-6">
         <h4>Check your toppings of choice</h4>
+        
         <p class="orange">Topping prices for large sized pizza;-</p>
         <div class="row" id="hideLarge">
-          <input name="four" type="checkbox">Black-Olives<br>
-          <input name="five" type="checkbox">Pepperoni <br>
-          <input name="six" type="checkbox">Extra Cheese <br>
-          <input name="seven" type="checkbox">Sausage <br> <br>
+          <input value=150 id="four" type="checkbox">Black-Olives<br>
+          <input value=150 id="five" type="checkbox">Pepperoni <br>
+          <input value=150 id="six" type="checkbox">Sausage <br> <br>
           <br>
           <a href="#" onclick="getValueforlargetopping() return:false">Section Cost</a>
         </div>
+
         <p class="orange">Topping prices for medium sized pizza;-</p>
         <div class="row" id="hideMedium">
-          <input id="eight" type="checkbox">Black-Olives<br>
-          <input id="nine" type="checkbox">Pepperoni <br>
-          <input id="ten" type="checkbox">Extra Cheese <br><br>
-          <input id="eleven" type="checkbox">Sausage<br><br>
+          <input value=100 id="eight" type="checkbox">Black-Olives<br>
+          <input value=100 id="nine" type="checkbox">Pepperoni <br>
+          <input value=100 id="ten" type="checkbox">Sausage<br><br>
           <br>
           <a href="#" onclick="getValueforMediumtopping()">Section Cost</a>
         </div>
+
         <p class="orange">Topping prices for small sized pizza;-</p>
         <div class="row" id="hideSmall">
-          <input id="twelve" type="checkbox">Black-Olives<br>
-          <input id="thirteen" type="checkbox">Pepperoni <br>
-          <input id="fourteen" type="checkbox">Extra Cheese <br>
-          <input id="fifteen" type="checkbox">Sausage <br><br>
+          <input value=70 id="twelve" type="checkbox">Black-Olives<br>
+          <input value=70 id="thirteen" type="checkbox">Pepperoni <br>
+          <input value=70 id="fourteen" type="checkbox">Sausage <br><br>
           <br>
           <a href="#" onclick="getValueforSmalltopping()">Section Cost</a>
         </div>
