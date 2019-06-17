@@ -4,7 +4,11 @@ function pizzaSize(small, medium, large){
   this.pizzaLarge=large;
 }
 
-
+function crustType(cripsy,stuffed,gluttenFree){
+  this.pizzaCripsy=cripsy;
+  this.pizzaStuffed=stuffed;
+  this.pizzaGlutten_free=glutenFree;
+}
 // $(document).ready(function(){
 //     $("#largeSelected").change(function(){
 //         var selectedPizza = $(this).children("option#largeSelected").val();
