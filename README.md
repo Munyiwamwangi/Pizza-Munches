@@ -32,7 +32,10 @@ This projects is about an online pizza store that takes the orders of their clie
 * jQuery
 
 ### Known bugs
- * No established bugs. If any found, freely contact developer at josseymunyi@gmail.com
+* The project is still under development and the following two bugs will be fixed soon;-
+* Ordering a certain number of pizzas is not fully functional as well as allowing a customer to select diverse toppings for the same pizza.
+* These ought to be implemented very soon.
+* Freely contact developer at josseymunyi@gmail.com
 
 
 ### Support and contact details
