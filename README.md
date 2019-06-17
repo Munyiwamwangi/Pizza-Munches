@@ -12,6 +12,7 @@ This projects is about an online pizza store that takes the orders of their clie
  | Action | Required Response | Application's Response |
  | :------- | :--------- | :-------- |
  | Selecting size of Piza selected is large | Allow user to select their choice | Allows user to select their choice |
+ | Clicking/Selecting large pizza | Hide toppings for small and medium pizza | When you select the large pizza,toppings for others hide. |
  | Gives specific price for every type. | Has price range for every pizza size. | Provides price range for every pizza size. |
  | Clicking pizza crust. |  Allow the client to select Pizza Crust with their respective prices. | Allows the client to select Pizza Crust and gives price for each crust |
  | Selecting Toppings. | Allow user to select as many toppings and get their prices added to total. | Allows client to select as many toppings as they wish |
@@ -20,8 +21,8 @@ This projects is about an online pizza store that takes the orders of their clie
 
 
 ## Project setup instructions
-* git clone <https://github.com/Munyiwamwangi/triangleTracker>
-* cd Triangle Tracker
+* git clone <https://munyiwamwangi.github.io/Pizza-Munches/>
+* cd Pizza Munches
 * Open index.html from a browser (preferably chrome)
 
 ## Technologies used
@@ -38,11 +39,11 @@ This projects is about an online pizza store that takes the orders of their clie
  * email:josseymunyi@gmail.com
 
 ### Link to live site on GitHub Pages
-  * link; <https://munyiwamwangi.github.io/triangleTracker/>
+  * link; <https://munyiwamwangi.github.io/Pizza-Munches/>
 
 ### copyright and license information MIT License
 
-* Copyright (c) [2019](munyiwamwangi)
+* Copyright (c) (2019)(munyiwamwangi)
 
 ## License Information
 
