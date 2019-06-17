@@ -1,3 +1,4 @@
+//constructors for collecting user input
 function pizzaSize(small, medium, large){
   this.pizzaSmall=small;
   this.pizzaMedium=medium;
@@ -9,24 +10,25 @@ function crustType(cripsy,stuffed,gluttenFree){
   this.pizzaStuffed=stuffed;
   this.pizzaGlutten_free=glutenFree;
 }
-// $(document).ready(function(){
-//     $("#largeSelected").change(function(){
-//         var selectedPizza = $(this).children("option#largeSelected").val();
-//         alert("Cost " + selectedPizza);
-//     });
-// });
-
-// $(document).ready(function() {
-//   $(".largeSelected").select(function() {
-//     $(".toppingsSelectorMedium").hide();
-//     $(".toppingsSelectorSmall").hide();
-// });
-// });
-//prototypes for collecting input
+// var largePizza = $("#one").val();
+// alert()
 $(document).ready(function() {
-  $("select.pizzaSize").change(function() {
-    var selectedPizza = $(this)
-      .children("option:selected").val();
-    alert("You have selected the pizza - " + selectedPizza);
+  $("#one").click(function() {
+    $("#hideMedium").hide();
+    $("#hideSmall").hide();
+    });
   });
-});
+
+  $(document).ready(function() {
+    $("#two").click(function() {
+      $("#hideSmall").hide();
+      $("#hideLarge").hide();
+      });
+    });
+
+    $(document).ready(function() {
+      $("#three").click(function() {
+        $("#hideLarge").hide();
+        $("#hideMedium").hide();
+        });
+      });
