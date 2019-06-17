@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <script src="js/jquery"></script>
   <link="js/jquery"> <script src="js/scripts.js">
   </script>
@@ -65,163 +65,161 @@
         <div class="col-md-3">
           <div>
             <p class="orange">Select your size;</p>
-            <form onsubmit="return" class="pizzaSize">
+            <form class="pizzaSize">
               <input id="one" name="auto_renew" type=radio>Large Pizza @ Ksh 800</input> <br>
               <input id="two" name="auto_renew" type=radio>Medium Pizza @ Ksh 500</input> <br>
               <input id="three" name="auto_renew" type=radio>Small Pizza @ Ksh 400</input> <br>
             </form>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <p class="orange">Pick Pizza Crust</p>
+          <form onsubmit="return">
+            <div id="valuesOutput">
+              <input value="cripsy" id="cripsy" name="auto_renew" type="radio">Crispy</input> <br>
+              <input value="glutenFree" id="gluttenFree" name="auto_renew" type="radio">Glutten Free</input> <br>
+              <input value="stuffed" id="stuffed" name="auto_renew" type="radio">Stuffed</input> <br>
+            </div>
           </form>
         </div>
-      </div>
-      <div class="col-md-3">
-        <p class="orange">Pick Pizza Crust</p>
-        <form onsubmit="return">
-          <div id="valuesOutput">
-            <input value="cripsy" id="cripsy" name="auto_renew" type="radio">Crispy</input> <br>
-            <input value="glutenFree" id="gluttenFree" name="auto_renew" type="radio">Glutten Free</input> <br>
-            <input value="stuffed" id="stuffed" name="auto_renew" type="radio">Stuffed</input> <br>
+        <div class="col-md-6">
+          <h4>Check your toppings of choice</h4>
+
+          <p class="orange">Topping prices for large sized pizza;-</p>
+          <div class="row" id="hideLarge">
+            <input value=150 id="four" type="checkbox">Black-Olives<br>
+            <input value=150 id="five" type="checkbox">Pepperoni <br>
+            <input value=150 id="six" type="checkbox">Sausage <br> <br>
+            <br>
+            <a href="#" onclick="getValueforlargetopping() return:false">Section Cost</a>
           </div>
-        </form>
-      </div>
-      <div class="col-md-6">
-        <h4>Check your toppings of choice</h4>
-        
-        <p class="orange">Topping prices for large sized pizza;-</p>
-        <div class="row" id="hideLarge">
-          <input value=150 id="four" type="checkbox">Black-Olives<br>
-          <input value=150 id="five" type="checkbox">Pepperoni <br>
-          <input value=150 id="six" type="checkbox">Sausage <br> <br>
-          <br>
-          <a href="#" onclick="getValueforlargetopping() return:false">Section Cost</a>
-        </div>
 
-        <p class="orange">Topping prices for medium sized pizza;-</p>
-        <div class="row" id="hideMedium">
-          <input value=100 id="eight" type="checkbox">Black-Olives<br>
-          <input value=100 id="nine" type="checkbox">Pepperoni <br>
-          <input value=100 id="ten" type="checkbox">Sausage<br><br>
-          <br>
-          <a href="#" onclick="getValueforMediumtopping()">Section Cost</a>
-        </div>
+          <p class="orange">Topping prices for medium sized pizza;-</p>
+          <div class="row" id="hideMedium">
+            <input value=100 id="eight" type="checkbox">Black-Olives<br>
+            <input value=100 id="nine" type="checkbox">Pepperoni <br>
+            <input value=100 id="ten" type="checkbox">Sausage<br><br>
+            <br>
+            <a href="#" onclick="getValueforMediumtopping()">Section Cost</a>
+          </div>
 
-        <p class="orange">Topping prices for small sized pizza;-</p>
-        <div class="row" id="hideSmall">
-          <input value=70 id="twelve" type="checkbox">Black-Olives<br>
-          <input value=70 id="thirteen" type="checkbox">Pepperoni <br>
-          <input value=70 id="fourteen" type="checkbox">Sausage <br><br>
-          <br>
-          <a href="#" onclick="getValueforSmalltopping()">Section Cost</a>
+          <p class="orange">Topping prices for small sized pizza;-</p>
+          <div class="row" id="hideSmall">
+            <input value=70 id="twelve" type="checkbox">Black-Olives<br>
+            <input value=70 id="thirteen" type="checkbox">Pepperoni <br>
+            <input value=70 id="fourteen" type="checkbox">Sausage <br><br>
+            <br>
+            <a href="#" onclick="getValueforSmalltopping()">Section Cost</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="numberOfPizza">
-      <button type="submit" name="button">Need Them Delivered?</button>
-      <button onclick="myFunction()">Confirm  Our Delivery</button>
-      <button type="submit" name="button">Total</button>
+      <div class="numberOfPizza">
+        <button type="submit" name="button">Need Them Delivered?</button>
+        <button onclick="myFunction()">Confirm Our Delivery</button>
+        <button type="submit" name="button">Total</button>
 
+      </div>
     </div>
+    <br><br>
+    <div class=" panel panel-default text-center">
+      <div class="panel-body">
+        <h4 class="orange">Commonly ordered pizza munches
+        </h4>
+      </div>
+    </div>
+
+    <div class="card-deck">
+      <div class="card text-center border-warning mb-4" style="width:10rem">
+        <div class="card-header">
+          <p> Hawaiian Pizza</p>
+        </div>
+        <div class="card-body">
+          <img class="card-img-center" width="300px" height="250px" src="./images/hawaaian.jpg" alt=" Hawaiian Pizza">
+          <h3 class="card-title">medium@Ksh 900</h3>
+        </div>
+        <div class="blockquote-footer">
+          <small class="text-muted">-QUALITY SERVICE WITH A SMILE-</small>
+        </div>
+      </div>
+
+
+      <div class="card text-center border-warning mb-4" style="width:10rem">
+        <div class="card-header">
+          <p>BBQ Chicken Pizza</p>
+        </div>
+        <div class="card-body">
+          <img class="card-img-center" width="300px" height="250px" src="./images/bbq.jpg" alt="BBQ Chicken ">
+          <h3 class="card-title">medium@Ksh 900</h3>
+        </div>
+        <div class="blockquote-footer">
+          <small class="text-muted">-QUALITY SERVICE WITH A SMILE-</small>
+        </div>
+      </div>
+
+      <div class="card text-center border-warning mb-4" style="width:10rem">
+        <div class="card-header">
+          <p>Margherita Pizza</p>
+        </div>
+        <div class="card-body">
+          <img class="card-img-center" height="250px" width="300px" src="./images/pic1.jpg" alt="Margherita Pizza"
+            alt="Margherita Pizza">>
+          <h3 class="card-title">medium@Ksh 900</h3>
+        </div>
+        <div class="blockquote-footer">
+          <small class="text-muted">-QUALITY SERVICE WITH A SMILE</small>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card-deck">
+      <div class="card text-center border-warning mb-4" style="width:10rem">
+        <div class="card-header">
+          <p> Pepperoni Pizza</p>
+        </div>
+        <div class="card-body">
+          <img class="card-img-center" width="300px" height="250px" src="./images/pepperoniPizza.jpg"
+            alt="Pepperoni Pizza">
+          <h3 class="card-title">medium@Ksh 900</h3>
+        </div>
+        <div class="blockquote-footer">
+          <small class="text-muted">-QUALITY SERVICE WITH A SMILE-</small>
+        </div>
+      </div>
+
+
+      <div class="card text-center border-warning mb-4" style="width:10rem">
+        <div class="card-header">
+          <p> Neapolitan Pizza</p>
+        </div>
+        <div class="card-body">
+          <img class="card-img-center" width="300px" height="250px" src="./images/neapolitan.jpg"
+            alt="Neapolitan Pizza">
+          <h3 class="card-title">medium@Ksh 900</h3>
+        </div>
+        <div class="blockquote-footer">
+          <small class="text-muted">-QUALITY SERVICE WITH A SMILE-</small>
+        </div>
+      </div>
+
+      <div class="card text-center border-warning mb-4" style="width:10rem">
+        <div class="card-header">
+          <p>Chicago Pizza</p>
+        </div>
+        <div class="card-body">
+          <img class="card-img-center" width="300px" height="250px" src="./images/chicago.jpg" alt="Chicago Pizza">
+          <h3 class="card-title">medium@Ksh 900</h3>
+        </div>
+        <div class="blockquote-footer">
+          <small class="text-muted">-QUALITY SERVICE WITH A SMILE</small>
+        </div>
+      </div>
+    </div>
+    <br>
   </div>
-  <br><br>
-  <div class=" panel panel-default text-center">
-    <div class="panel-body">
-      <h4 class="orange">Commonly ordered pizza munches
-      </h4>
-    </div>
+  <h6 class="orange text-center">ENJOY IT AS YOU LOVE IT, WITH THE ONE YOU LOVE;</h6>
   </div>
-
-  <div class="card-deck">
-    <div class="card text-center border-warning mb-4" style="width:10rem">
-      <div class="card-header">
-        <p> Hawaiian Pizza</p>
-      </div>
-      <div class="card-body">
-        <img class="card-img-center" width="300px" height="250px" src="./images/hawaaian.jpg"
-        alt="Fried Fish with Ugali">
-        <h3 class="card-title">medium@Ksh 900</h3>
-      </div>
-      <div class="blockquote-footer">
-        <small class="text-muted">-QUALITY SERVICE WITH A SMILE-</small>
-      </div>
-    </div>
-
-
-    <div class="card text-center border-warning mb-4" style="width:10rem">
-      <div class="card-header">
-        <p>BBQ Chicken Pizza</p>
-      </div>
-      <div class="card-body">
-        <img class="card-img-center" width="300px" height="250px" src="./images/bbq.jpg" alt="BBQ Chicken ">
-        <h3 class="card-title">medium@Ksh 900</h3>
-      </div>
-      <div class="blockquote-footer">
-        <small class="text-muted">-QUALITY SERVICE WITH A SMILE-</small>
-      </div>
-    </div>
-
-    <div class="card text-center border-warning mb-4" style="width:10rem">
-      <div class="card-header">
-        <p>Margherita Pizza</p>
-      </div>
-      <div class="card-body">
-        <img class="card-img-center" height="250px" width="300px" src="./images/pic1.jpg" alt="Margherita Pizza"
-        alt="Margherita Pizza">>
-        <h3 class="card-title">medium@Ksh 900</h3>
-      </div>
-      <div class="blockquote-footer">
-        <small class="text-muted">-QUALITY SERVICE WITH A SMILE</small>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="card-deck">
-    <div class="card text-center border-warning mb-4" style="width:10rem">
-      <div class="card-header">
-        <p> Pepperoni Pizza</p>
-      </div>
-      <div class="card-body">
-        <img class="card-img-center" width="300px" height="250px" src="./images/pepperoniPizza.jpg"
-        alt="Pepperoni Pizza">
-        <h3 class="card-title">medium@Ksh 900</h3>
-      </div>
-      <div class="blockquote-footer">
-        <small class="text-muted">-QUALITY SERVICE WITH A SMILE-</small>
-      </div>
-    </div>
-
-
-    <div class="card text-center border-warning mb-4" style="width:10rem">
-      <div class="card-header">
-        <p> Neapolitan Pizza</p>
-      </div>
-      <div class="card-body">
-        <img class="card-img-center" width="300px" height="250px" src="./images/neapolitan.jpg"
-        alt="Neapolitan Pizza">
-        <h3 class="card-title">medium@Ksh 900</h3>
-      </div>
-      <div class="blockquote-footer">
-        <small class="text-muted">-QUALITY SERVICE WITH A SMILE-</small>
-      </div>
-    </div>
-
-    <div class="card text-center border-warning mb-4" style="width:10rem">
-      <div class="card-header">
-        <p>Chicago Pizza</p>
-      </div>
-      <div class="card-body">
-        <img class="card-img-center" width="300px" height="250px" src="./images/chicago.jpg"
-        alt="Fried Fish with Ugali">
-        <h3 class="card-title">medium@Ksh 900</h3>
-      </div>
-      <div class="blockquote-footer">
-        <small class="text-muted">-QUALITY SERVICE WITH A SMILE</small>
-      </div>
-    </div>
-  </div>
-  <br>
-</div>
-<h6 class="orange text-center">ENJOY IT AS YOU LOVE IT, WITH THE ONE YOU LOVE;</h6>
-</div>
-<script src="js/scripts.js" type="text/javascript"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 
 </html>

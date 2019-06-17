@@ -1,18 +1,18 @@
 /*****************navigation bar*************/
 ul {
-  margin:0px;
+  margin: 0px;
 }
 ul li {
   background-color: navy;
   width: 325px;
-  height: 40px;
+  height: 50px;
   line-height: 50px;
   text-align: center;
   font-size: 20px;
   margin-right: 0;
   color: white;
   float: left;
-  list-style:none;
+  list-style: none;
 }
 ul li a {
   text-decoration: none;
@@ -22,16 +22,13 @@ ul li a {
 ul li a:hover {
   color: lightgrey;
 }
-ul li ul li{
+ul li ul li {
   display: none;
 }
 ul li:hover ul li {
   display: block;
 }
-nav li ul li{
-  diaplay:inline;
-}
-h1{
+h1 {
   font-size: 40px;
 }
 /************************* general **********/
@@ -41,20 +38,21 @@ h1{
   background-repeat: no-repeat;
   height: 600px;
 }
-#custom{
+#custom {
   border: 5px dotted brown;
 }
-.top5{
-top:10px;
+.top5 {
+  top: 10px;
 }
-.orange{
+.orange {
   color: orange;
 }
-.font1{
-  font-family: 'Open Sans Condensed', sans-serif;
+.font1 {
+  font-family: "Open Sans Condensed", sans-serif;
 }
 /****************ORDER************BOX********/
-.order{
+.order {
   border: 5px dotted burlywood;
   box-shadow: 5px solid brown;
+  padding: 2%;
 }
