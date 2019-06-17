@@ -4,42 +4,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <script src="js/jquery"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title></title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <ul>
-        <li>
-          <a href="#">Contact US</a>
-        </li>
-        <li>
-          <a href="#">Toppings</a>
-          <ul>
-            <li>Pepperoni</li>
-            <li>Onions</li>
-            <li>Bacon</li>
-            <li>Black Olives</li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Available Crust</a>
-          <ul>
-            <li>Crispy</li>
-            <li>Glutten-free</li>
-            <li>Stuffed</li>
-          </ul>
-        </li>
-        <li>
-          <a href="#custom">Customize Your Pizza</a>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Contact US</a>
+          </li>
+          <li>
+            <a href="#">Toppings</a>
+            <ul>
+              <li>Pepperoni</li>
+              <li>Onions</li>
+              <li>Bacon</li>
+              <li>Black Olives</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Available Crust</a>
+            <ul>
+              <li>Crispy</li>
+              <li>Glutten-free</li>
+              <li>Stuffed</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#custom">Customize Your Pizza</a>
+          </li>
+        </ul>
+      </nav>
+
     </div>
     <div class="text-center top5" style="color:darkorange;">
       <h1>Pizza Munches</h1>
@@ -48,56 +53,64 @@
     <div class="firstPageImg">
 
     </div>
+    <br> <br>
     <div class=" panel panel-default">
       <div class="panel-body">
         <p style="text-align:center">Want Some Custom Made Pizza, We Got you covered;</p>
       </div>
     </div>
-
-    <div class="sizeSelector">
-      <select>
-        <option value="large"></option>
-        <option value="small"></option>
-        <option value="medium"></option>
-      </select>
+    <div class="row">
+      <div class="col-md-3">
+        <div>
+            <p>Select Pizza Size</p>
+            <select onChange="sizeSelector" id="pizzaSize">
+              <option id="largeSelected" value="1000">Large Pizza</option> <br>
+              <option id="mediumSelected" value="750">Medium Pizza</option> <br>
+              <option id="smallSelected" value="500">Small Pizza</option> <br>
+            </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="crustSelector">
+          <p>Pick Pizza Crust</p>
+            <select>
+              <option value="cripsy">Crispy</option>
+              <option value="gluttenFree">Glutten Free</option>
+              <option value="stuffed">Stuffed</option>
+            </select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4>Check your toppings of choice</h4>
+        <div class="row toppingsSelectorLarge">
+          <input type="checkbox" class="largePizza" value="150">Black-Olives<br>
+          <input type="checkbox" class="largePizza" value="150">Pepperoni <br>
+          <input type="checkbox" class="largePizza" value="150">Extra Cheese <br>
+          <input type="checkbox" class="largePizza" value="150">Sausage <br> <br>
+          <br>
+          <a href="#" onclick="getValueforlargetopping() return:false">Section Cost</a>
+        </div>
+        <div class="row toppingsSelectorMedium">
+          <input type="checkbox" class="mediumPizza" value="100">Black-Olives<br>
+          <input type="checkbox" class="mediumPizza" value="100">Pepperoni <br>
+          <input type="checkbox" class="mediumPizza" value="100">Extra Cheese <br>
+          <input type="checkbox" class="mediumPizza" value="100">Sausage <br>
+          <br>
+          <a href="#" onclick="getValueforMediumtopping">Section Cost</a>
+        </div>
+        <div class="row toppingsSelectorSmall">
+          <input type="checkbox" class="smallPizza" value="50">Black-Olives<br>
+          <input type="checkbox" class="smallPizza" value="50">Pepperoni <br>
+          <input type="checkbox" class="smallPizza" value="50">Extra Cheese <br>
+          <input type="checkbox" class="smallPizza" value="50">Sausage <br>
+          <br>
+          <a href="#" onclick="getValueforSmalltopping">Section Cost</a>
+        </div>
+      </div>
     </div>
-    <div class="crustSelector">
-      <select>
-        <option value="cripsy"></option>
-        <option value="gluttenFree"></option>
-        <option value="stuffed"></option>
-      </select>
-    </div>
-    <div class="row toppingsSelectorLarge">
-      <select >
-        <input type="checkbox" class="checks" value="150">Black-Olives<br>
-        <input type="checkbox" class="checks" value="150">Pepperoni <br>
-        <input type="checkbox" class="checks" value="150">Extra Cheese <br>
-        <input type="checkbox" class="checks" value="150">Sausage <br>
-      </select>
-    </div>
-    <div class="row toppingsSelectorMedium">
-      <select >
-        <input type="checkbox" class="checks" value="100">Black-Olives<br>
-        <input type="checkbox" class="checks" value="100">Pepperoni <br>
-        <input type="checkbox" class="checks" value="100">Extra Cheese <br>
-        <input type="checkbox" class="checks" value="100">Sausage <br>
-      </select>
-    </div>
-    <div class="row toppingsSelectorSmall">
-      <select >
-        <input type="checkbox" class="checks" value="50">Black-Olives<br>
-        <input type="checkbox" class="checks" value="50">Pepperoni <br>
-        <input type="checkbox" class="checks" value="50">Extra Cheese <br>
-        <input type="checkbox" class="checks" value="50">Sausage <br>
-      </select>
-    </div>
-
-
     <div class=" panel panel-default text-center">
       <div class="panel-body">
-        <p>Main Pizza Munches</p>
-        <h6>ENJOY IT AS YOU LOVE IT, WITH THE ONE YOU LOVE;</h6>
+        <h4 class="orange">Commonly ordered pizza munches</h4>
       </div>
     </div>
 
@@ -191,7 +204,9 @@
     </div>
     <br>
   </div>
+  <h6 class="orange text-center">ENJOY IT AS YOU LOVE IT, WITH THE ONE YOU LOVE;</h6>
   </div>
+  <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 
 </html>

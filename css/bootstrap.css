@@ -554,25 +554,25 @@ pre code {
 }
 
 @media (min-width: 576px) {
-  .container {
+  .container, container-fluid {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container, container-fluid {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  .container, container-fluid  {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .container, container-fluid  {
     max-width: 1140px;
   }
 }
