@@ -62,48 +62,46 @@
     <div class="row">
       <div class="col-md-3">
         <div>
-          <label>Select Pizza Size</label>
-          <div class="pizzaSize">
-            <input id="one" type=radio name="pizzar" value=1000>Large Pizza</input> <br>
-            <input id="two" type=radio name="pizzar" value=750>Medium Pizza</input> <br>
-            <input id="three" type=radio name="pizzar" value=500>Small Pizza</input> <br>
-          </div>
+          <p class="orange">Select your size;</p>
+          <form= onsubmit="return" class="pizzaSize">
+            <input id="one" name="auto_renew" type=radio value=1000>Large Pizza</input> <br>
+            <input id="two" name="auto_renew" type=radio value=750>Medium Pizza</input> <br>
+            <input id="three" name="auto_renew" type=radio value=500>Small Pizza</input> <br>
+          </form="">
           </form>
         </div>
       </div>
       <div class="col-md-3">
-        <div class="crustSelector">
-          <p>Pick Pizza Crust</p>
-          <select>
-            <option value="cripsy">Crispy</option>
-            <option value="gluttenFree">Glutten Free</option>
-            <option value="stuffed">Stuffed</option>
-          </select>
-        </div>
+          <p class="orange">Pick Pizza Crust</p>
+          <form onsubmit="return">
+            <input type="radio" value="cripsy">Crispy</input> <br>
+            <input type="radio" value="gluttenFree">Glutten Free</input> <br>
+            <input type="radio" value="stuffed">Stuffed</input> <br>
+          </form>
       </div>
       <div class="col-md-6">
         <h4>Check your toppings of choice</h4>
-        <div class="row toppingsSelectorLarge" id="hideLarge">
-          <input type="checkbox" class="largePizza" value="150">Black-Olives<br>
-          <input type="checkbox" class="largePizza" value="150">Pepperoni <br>
-          <input type="checkbox" class="largePizza" value="150">Extra Cheese <br>
-          <input type="checkbox" class="largePizza" value="150">Sausage <br> <br>
+        <div class="row" id="hideLarge">
+          <input type="checkbox" value="150">Black-Olives<br>
+          <input type="checkbox" value="150">Pepperoni <br>
+          <input type="checkbox" value="150">Extra Cheese <br>
+          <input type="checkbox" value="150">Sausage <br> <br>
           <br>
           <a href="#" onclick="getValueforlargetopping() return:false">Section Cost</a>
         </div>
-        <div class="row toppingsSelectorMedium" id="hideMedium">
-          <input type="checkbox" class="mediumPizza" value="100">Black-Olives<br>
-          <input type="checkbox" class="mediumPizza" value="100">Pepperoni <br>
-          <input type="checkbox" class="mediumPizza" value="100">Extra Cheese <br>
-          <input type="checkbox" class="mediumPizza" value="100">Sausage <br>
+        <div class="row" id="hideMedium">
+          <input type="checkbox" value="100">Black-Olives<br>
+          <input type="checkbox" value="100">Pepperoni <br>
+          <input type="checkbox" value="100">Extra Cheese <br>
+          <input type="checkbox" value
           <br>
           <a href="#" onclick="getValueforMediumtopping">Section Cost</a>
         </div>
-        <div class="row toppingsSelectorSmall"  id="hideSmall">
-          <input type="checkbox" class="smallPizza" value="50">Black-Olives<br>
-          <input type="checkbox" class="smallPizza" value="50">Pepperoni <br>
-          <input type="checkbox" class="smallPizza" value="50">Extra Cheese <br>
-          <input type="checkbox" class="smallPizza" value="50">Sausage <br>
+        <div class="row"  id="hideSmall">
+          <input type="checkbox" value="50">Black-Olives<br>
+          <input type="checkbox" value="50">Pepperoni <br>
+          <input type="checkbox" value="50">Extra Cheese <br>
+          <input type="checkbox" value="50">Sausage <br>
           <br>
           <a href="#" onclick="getValueforSmalltopping">Section Cost</a>
         </div>

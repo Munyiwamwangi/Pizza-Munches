@@ -10,8 +10,7 @@ function crustType(cripsy,stuffed,gluttenFree){
   this.pizzaStuffed=stuffed;
   this.pizzaGlutten_free=glutenFree;
 }
-// var largePizza = $("#one").val();
-// alert()
+// Hide on click
 $(document).ready(function() {
   $("#one").click(function() {
     $("#hideMedium").hide();
@@ -32,3 +31,8 @@ $(document).ready(function() {
         $("#hideMedium").hide();
         });
       });
+
+
+var largePizza = $("#one").val();
+var mediumPizza = $("#two").val();
+var smallPizza = $("#three").val();
