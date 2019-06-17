@@ -15,6 +15,7 @@ $(document).ready(function() {
   $("#one").click(function() {
     $("#hideMedium").hide();
     $("#hideSmall").hide();
+    alert(largePizza[2])
     });
   });
 
@@ -32,7 +33,6 @@ $(document).ready(function() {
         });
       });
 
-
-var largePizza = $("#one").val();
-var mediumPizza = $("#two").val();
-var smallPizza = $("#three").val();
+var priceSize=[800, 500, 400];
+var priceCrust=[100, 100, 100];
+var priceTopping=[70, 70 ,70];
