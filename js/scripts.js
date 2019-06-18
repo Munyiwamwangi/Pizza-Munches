@@ -19,20 +19,7 @@ $(document).ready(function () {
     event.preventDefault();
   });
 });
-/***********************BUSINESS LOGIC**********************/
-/***************CONSTRUCTORS**************************/
 
-function pizzaSize(small, medium, large) {
-  this.pizzaSmall = small;
-  this.pizzaMedium = medium;
-  this.pizzaLarge = large;
-}
-
-function crustType(cripsy, stuffed, gluttenFree) {
-  this.pizzaCripsy = cripsy;
-  this.pizzaStuffed = stuffed;
-  this.pizzaGlutten_free = glutenFree;
-}
 function myFunction() {
   confirm("click okay to confirm delivery @ Ksh 200!");
 }
@@ -59,7 +46,7 @@ $('#stuffed').click(function () {
 /*******************FOR LARGE***************************/
 $('#four').click(function () {
   var value4 = document.getElementById('four').value;
-  return value4;
+  alert(value4);
 })
 $('#five').click(function () {
   var value5 = document.getElementById('five').value;
@@ -95,5 +82,55 @@ $('#fourteen').click(function () {
   var value14 = document.getElementById('fourteen').value;
   alert(value14);
 })
+/***********************BUSINESS LOGIC**********************/
+/***************CONSTRUCTORS**************************/
+
+function pizza(large, medium, small, price) {
+  this.pizzaSmall = small;
+  this.pizzaMedium = medium;
+  this.pizzaLarge = large;
+  this.price = 0; //initializing
+}
+
+function crustType(cripsy, stuffed, gluttenFree) {
+  this.cripsy = cripsy;
+  this.stuffed = stuffed;
+  this.glutten_free = glutenFree;
+}
+function topping(black_olives, glutenFree, stuffed){
+   this.black_olives = black_olives;
+   this.gluttenFree = glutenFree;
+   this.stuffed = stuffed;
+}
+var size =['large', 'medium', 'small'];
+var crust=['cripsy', 'glutenFree', 'stuffed'];
+var topping=['black-olives', 'pepperoni', 'sausage'];
 /*******************CONDITIONAL LOOPS***********************/
 /*******************FOR LARGE***************************/
+if(this.size===size[0]){
+   this.price = 800;
+}
+else if (this.size === size[1]) {
+   this.price = 500;
+}
+else if (this.size === size[2]) {
+   this.price = 400;
+}
+if(this.crust === crust[0]){
+   this.price = 100;
+}
+else if (this.crust === crust[1]) {
+   this.price = 100;
+}
+else if (this.crust === crust[2]) {
+   this.price = 80;
+}
+if(this.topping === topping[0]) {
+   this.price = 150;
+}
+else if (this.topping = topping[1]) {
+this.price = 100;
+}
+else if (this.sausage === topping[2]) {
+this.price === 200;
+}
